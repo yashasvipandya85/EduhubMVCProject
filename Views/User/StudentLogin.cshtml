@@ -1,0 +1,29 @@
+@{
+    ViewData["Title"] = "Student Login";
+}
+
+<div class="d-flex justify-content-center align-items-center min-vh-100" style="background-color: #f8f9fa;">
+    <div class="card shadow-lg border-0" style="width: 400px;">
+        <div class="card-header bg-primary text-white text-center">
+            <h4>Student Login</h4>
+        </div>
+        <div class="card-body p-4">
+            <form method="post" asp-action="StudentLogin">
+                <div class="mb-4">
+                    <label for="Email" class="form-label fw-bold">Email</label>
+                    <input type="email" class="form-control" id="Email" name="Email" placeholder="Enter your email" required />
+                </div>
+                <div class="mb-4">
+                    <label for="Password" class="form-label fw-bold">Password</label>
+                    <input type="password" class="form-control" id="Password" name="Password" placeholder="Enter your password" required />
+                </div>
+                <div class="d-grid">
+                    <button type="submit" class="btn btn-primary">Login</button>
+                </div>
+            </form>
+        </div>
+        <div class="card-footer text-center bg-light">
+            <small class="text-muted">Don't have an account? <a href="/User/Register" class="text-primary">Register here</a></small>
+        </div>
+    </div>
+</div>

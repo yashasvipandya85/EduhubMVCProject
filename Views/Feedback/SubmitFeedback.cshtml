@@ -1,0 +1,33 @@
+@model Eduhub_MVC_Project.Models.Feedback
+
+@{
+    ViewData["Title"] = "Submit Feedback";
+    Layout = "~/Views/Shared/_StudentLayout.cshtml"; 
+}
+
+<div class="container mt-4">
+    <h2 class="mb-4 text-center">Submit Feedback</h2>
+
+    @*@if (TempData["SuccessMessage"] != null)
+    {
+        <div class="alert alert-success" role="alert">
+            @TempData["SuccessMessage"]
+        </div>
+    }
+    @if (TempData["ErrorMessage"] != null)
+    {
+        <div class="alert alert-danger" role="alert">
+            @TempData["ErrorMessage"]
+        </div>
+    }*@
+
+    <form asp-action="SubmitFeedback" method="post">
+        <div class="form-group">
+            <label asp-for="StuFeedback" class="control-label"></label>
+            <textarea asp-for="StuFeedback" class="form-control" required></textarea>
+        </div>
+        <input asp-for="CourseId" type="hidden" value="@Model.CourseId" />
+        <input asp-for="UserId" type="hidden" value="@Model.UserId" />
+        <button type="submit" class="btn btn-primary">Submit Feedback</button>
+    </form>
+</div>

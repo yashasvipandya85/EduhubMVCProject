@@ -1,0 +1,78 @@
+@model IEnumerable<Eduhub_MVC_Project.Models.Enrollment>
+
+@{
+    ViewData["Title"] = "Course Enrollments";
+    var course = ViewBag.Course;
+}
+
+<div class="container mt-4">
+    <div class="card">
+        <div class="card-header bg-primary text-white">
+            <h2 class="mb-0">Course Enrollments</h2>
+        </div>
+        <div class="card-body">
+            @if (TempData["ErrorMessage"] != null)
+            {
+                <div class="alert alert-danger" role="alert">
+                    @TempData["ErrorMessage"]
+                </div>
+            }
+
+            @if (TempData["DebugCourseUserId"] != null)
+            {
+                <div class="alert alert-info" role="alert">
+                    Course.UserId: @TempData["DebugCourseUserId"]
+                </div>
+            }
+
+            @if (TempData["DebugSessionUserId"] != null)
+            {
+                <div class="alert alert-info" role="alert">
+                    Session UserId: @TempData["DebugSessionUserId"]
+                </div>
+            }
+
+            @if (!Model.Any())
+            {
+                <div class="alert alert-warning" role="alert">
+                    No enrollments found for this course.
+                </div>
+            }
+            else
+            {
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th>Student</th>
+                            <th>Enrollment Date</th>
+                            <th>Status</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var enrollment in Model)
+                        {
+                            <tr>
+                                <td>@enrollment.User.Username</td>
+                                <td>@enrollment.EnrollmentDate.ToShortDateString()</td>
+                                <td>@enrollment.Status</td>
+                                <td>
+                                    <form asp-action="UpdateStatus" method="post" class="d-inline">
+                                        <input type="hidden" name="enrollmentId" value="@enrollment.EnrollmentId" />
+                                        <select name="status" class="form-control d-inline" style="width: auto;">
+                                            <option value="Pending" selected="@enrollment.Status == "Pending"">Pending</option>
+                                            <option value="Accepted" selected="@enrollment.Status == "Accepted"">Accepted</option>
+                                            <option value="Rejected" selected="@enrollment.Status == "Rejected"">Rejected</option>
+                                        </select>
+                                        <button type="submit" class="btn btn-primary btn-sm">Update</button>
+                                    </form>
+                                </td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            }
+        </div>
+    </div>
+</div>
+

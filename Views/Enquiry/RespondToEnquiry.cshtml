@@ -1,0 +1,33 @@
+@model Eduhub_MVC_Project.ViewModels.RespondToEnquiryViewModel
+
+@{
+    ViewData["Title"] = "Respond to Enquiry";
+    Layout = "~/Views/Shared/_EducatorLayout.cshtml"; // Using educator layout
+}
+
+<div class="container mt-4">
+    <h2 class="mb-4 text-center">Respond to Enquiry</h2>
+
+    <form asp-action="RespondToEnquiry" method="post">
+        <div class="form-group">
+            <label class="control-label">Student Name</label>
+            <p class="form-control-static">@ViewBag.StudentName</p>
+        </div>
+        <div class="form-group">
+            <label class="control-label">Subject</label>
+            <p class="form-control-static">@ViewBag.Subject</p>
+        </div>
+        <div class="form-group">
+            <label class="control-label">Enquiry Message</label>
+            <p class="form-control-static">@ViewBag.Message</p>
+        </div>
+        <div class="form-group">
+            <label asp-for="Response" class="control-label">Response</label>
+            <textarea asp-for="Response" class="form-control" required></textarea>
+        </div>
+        <input asp-for="EnquiryId" type="hidden" value="@Model.EnquiryId" />
+        <div>
+            <button type="submit" class="btn btn-primary">Submit Response</button>
+        </div>
+    </form>
+</div>

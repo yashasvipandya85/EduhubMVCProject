@@ -1,0 +1,35 @@
+@model IEnumerable<Eduhub_MVC_Project.Models.Enrollment>
+
+@{
+    ViewData["Title"] = "My Enrollments";
+    Layout = "~/Views/Shared/_EducatorLayout.cshtml"; // Using educator layout
+}
+
+<div class="container mt-4">
+    <h2 class="mb-4 text-center">My Enrollments</h2>
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Course Title</th>
+                <th>Student ID</th>
+                <th>Enrollment Date</th>
+                <th>Status</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var enrollment in Model)
+            {
+                <tr>
+                    <td>@enrollment.Course.Title</td>
+                    <td>@enrollment.UserId</td>
+                    <td>@enrollment.EnrollmentDate.ToString("yyyy-MM-dd")</td>
+                    <td>@enrollment.Status</td>
+                    <td>
+                        <a asp-action="EnrollmentDetails" asp-route-id="@enrollment.EnrollmentId" class="btn btn-info">Details</a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>

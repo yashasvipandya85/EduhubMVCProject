@@ -1,0 +1,48 @@
+@{
+    ViewData["Title"] = "Register";
+}
+
+<div class="d-flex justify-content-center align-items-center min-vh-100" style="background-color: #f8f9fa;">
+    <div class="card shadow-lg border-0" style="width: 450px;">
+        <div class="card-header bg-info text-white text-center">
+            <h4>Create Your Account</h4>
+        </div>
+        <div class="card-body p-4">
+            <form method="post" asp-action="Register">
+                <div class="mb-4">
+                    <label for="Username" class="form-label fw-bold">Username</label>
+                    <input type="text" class="form-control" id="Username" name="Username" placeholder="Enter your username" required />
+                </div>
+                <div class="mb-4">
+                    <label for="Email" class="form-label fw-bold">Email</label>
+                    <input type="email" class="form-control" id="Email" name="Email" placeholder="Enter your email" required />
+                </div>
+                <div class="mb-4">
+                    <label for="Password" class="form-label fw-bold">Password</label>
+                    <input type="password" class="form-control" id="Password" name="Password" placeholder="Enter your password" required />
+                </div>
+                <div class="mb-4">
+                    <label for="MobileNumber" class="form-label fw-bold">Mobile Number</label>
+                    <input type="text" class="form-control" id="MobileNumber" name="MobileNumber" placeholder="Enter your mobile number" required />
+                </div>
+                <div class="mb-4">
+                    <label for="UserRole" class="form-label fw-bold">User Role</label>
+                    <select id="UserRole" name="UserRole" class="form-control">
+                        <option value="Student">Student</option>
+                        <option value="Educator">Educator</option>
+                    </select>
+                </div>
+                <div class="mb-4">
+                    <label for="Image" class="form-label fw-bold">Profile Image</label>
+                    <input type="text" class="form-control" id="Image" name="Image" placeholder="Enter your Image" required />
+                </div>
+                <div class="d-grid">
+                    <button type="submit" class="btn btn-info">Register</button>
+                </div>
+            </form>
+        </div>
+        <div class="card-footer text-center bg-light">
+            <small class="text-muted">Already have an account? <a href="/Account/Login" class="text-info">Login here</a></small>
+        </div>
+    </div>
+</div>

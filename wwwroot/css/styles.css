@@ -1,0 +1,81 @@
+header{
+    z-index: 1030;
+    position: fixed;
+    width: 100%;
+    height: 60px;
+}
+header .navbar{
+    padding: 0.7rem 1.5rem;
+    background: linear-gradient(90deg, #007bff, #0056b3);
+}
+header .navbar-brand{
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: white;
+    letter-spacing: 1px;
+}
+header .nav-link{
+    padding: 0.5rem 1rem;
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s, background-color 0.3s ease-in-out;
+}
+header .navbar-toggle{
+    border: none;
+    color: white;
+}
+header .nav-link:hover{
+    color: #007bff;
+    background-color: #fa921b;
+}
+body{
+    padding-top: 70px;
+}
+.hero{
+    background: linear-gradient(to bottom, #1c92d2, #f2fcfe);
+    color: #fff;
+    padding: 3rem 0;
+    text-align: center;
+    margin-top: -70px;
+    padding-top: 70px;
+}
+.hero h1
+{
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+.hero p{
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+}
+.hero .btn-primary{
+    padding: 0.75rem 2rem;
+    font-size: 1.2rem;
+}
+.features{
+    background-color: #f7f9fc;
+    padding: 3rem 0;
+}
+.features .card{
+    border-radius: 15px;
+    transition: transform 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.features .card:hover{
+    transform: scale(1.05);
+}
+.features .card-title
+{
+    font-weight: bold;
+    color: #333;
+}
+.features .card-text{
+    color: #666;
+    margin-bottom: 1rem;
+}
+.features .bi{
+    font-size: 3rem;
+    margin-bottom: 10px;
+    color: #007bff;
+}

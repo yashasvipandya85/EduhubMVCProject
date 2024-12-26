@@ -1,0 +1,43 @@
+@model IEnumerable<Eduhub_MVC_Project.Models.Enquiry>
+
+@{
+    ViewData["Title"] = "My Enquiries";
+    Layout = "~/Views/Shared/_StudentLayout.cshtml"; // Using student layout
+}
+
+<div class="container mt-4">
+    <h2 class="mb-4 text-center">My Enquiries</h2>
+    @if (!Model.Any())
+    {
+        <p>You have not submitted any enquiries.</p>
+    }
+    else
+    {
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>Course Title</th>
+                    <th>Subject</th>
+                    <th>Enquiry Message</th>
+                    <th>Status</th>
+                    <th>Response</th>
+                    <th>Enquiry Date</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var enquiry in Model)
+                {
+                    <tr>
+                        <td>@enquiry.Course.Title</td>
+                        <td>@enquiry.Subject</td>
+                        <td>@enquiry.Message</td>
+                        <td>@enquiry.Status</td>
+                        <td>@enquiry.Response ?? "No response yet"</td>
+                        <td>@enquiry.EnquiryDate.ToString("yyyy-MM-dd")</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    }
+</div>
+

@@ -1,0 +1,41 @@
+@model IEnumerable<Eduhub_MVC_Project.Models.Material>
+
+@{
+    ViewData["Title"] = "Course Materials";
+    Layout = "~/Views/Shared/_EducatorLayout.cshtml"; // Using educator layout
+}
+
+<div class="container mt-4">
+    <h2 class="mb-4 text-center">Course Materials</h2>
+    <a asp-action="AddMaterial" asp-route-courseId="@ViewBag.CourseId" class="btn btn-primary mb-4">Add Material</a>
+    @if (!Model.Any())
+    {
+        <p>No materials have been uploaded for this course yet.</p>
+    }
+    else
+    {
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>Title</th>
+                    <th>Description</th>
+                    <th>Upload Date</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var material in Model)
+                {
+                    <tr>
+                        <td>@material.Title</td>
+                        <td>@material.Description</td>
+                        <td>@material.UploadDate.ToString("yyyy-MM-dd")</td>
+                        <td>
+                            <a asp-action="EditMaterial" asp-route-materialId="@material.MaterialId" class="btn btn-info">Edit</a>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    }
+</div>

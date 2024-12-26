@@ -1,0 +1,45 @@
+@model IEnumerable<Eduhub_MVC_Project.Models.Enquiry>
+
+@{
+    ViewData["Title"] = "Course Enquiries";
+    Layout = "~/Views/Shared/_EducatorLayout.cshtml"; // Using educator layout
+}
+
+<div class="container mt-4">
+    <h2 class="mb-4 text-center">Course Enquiries</h2>
+    @if (!Model.Any())
+    {
+        <p>No enquiries found for your courses.</p>
+    }
+    else
+    {
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>Student Username</th>
+                    <th>Subject</th>
+                    <th>Message</th>
+                    <th>Status</th>
+                    <th>Response</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var enquiry in Model)
+                {
+                    <tr>
+                        <td>@enquiry.User.Username</td>
+                        <td>@enquiry.Subject</td>
+                        <td>@enquiry.Message</td>
+                        <td>@enquiry.Status</td>
+                        <td>@enquiry.Response</td>
+                        <td>
+                            <a asp-action="RespondToEnquiry" asp-route-enquiryId="@enquiry.EnquiryId" class="btn btn-info">Respond</a>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    }
+</div>
+

@@ -1,0 +1,50 @@
+@model Eduhub_MVC_Project.Models.Course
+
+@{
+    ViewData["Title"] = "Create Course";
+}
+
+<div class="container mt-4">
+    <h2>Create Course</h2>
+    <form asp-action="Create" method="post">
+        
+        <div class="mb-3">
+            <label asp-for="Title" class="form-label"></label>
+            <input asp-for="Title" class="form-control" />
+            <span asp-validation-for="Title" class="text-danger"></span>
+        </div>
+        <div class="mb-3">
+            <label asp-for="Description" class="form-label"></label>
+            <textarea asp-for="Description" class="form-control"></textarea>
+            <span asp-validation-for="Description" class="text-danger"></span>
+        </div>
+        <div class="mb-3">
+            <label asp-for="CourseStartDate" class="form-label"></label>
+            <input asp-for="CourseStartDate" class="form-control" type="date" />
+            <span asp-validation-for="CourseStartDate" class="text-danger"></span>
+        </div>
+        <div class="mb-3">
+            <label asp-for="CourseEndDate" class="form-label"></label>
+            <input asp-for="CourseEndDate" class="form-control" type="date" />
+            <span asp-validation-for="CourseEndDate" class="text-danger"></span>
+        </div>
+        <div class="mb-3">
+            <label asp-for="UserId" class="form-label"></label>
+            <input asp-for="UserId" class="form-control" type="text" />
+            <span asp-validation-for="UserId" class="text-danger"></span>
+        </div>
+       
+        <div class="mb-3">
+            <label asp-for="Category" class="form-label"></label>
+            <input asp-for="Category" class="form-control" />
+            <span asp-validation-for="Category" class="text-danger"></span>
+        </div>
+        <div class="mb-3">
+            <label asp-for="Level" class="form-label"></label>
+            <input asp-for="Level" class="form-control" />
+            <span asp-validation-for="Level" class="text-danger"></span>
+        </div>
+        <button type="submit" class="btn btn-primary">Create</button>
+        <a asp-action="Index" class="btn btn-secondary">Cancel</a>
+    </form>
+</div>

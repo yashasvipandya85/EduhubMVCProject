@@ -1,0 +1,32 @@
+@model Eduhub_MVC_Project.Models.User
+
+@{
+    ViewData["Title"] = "Profile";
+    Layout = ViewBag.Layout as string;
+}
+
+<div class="container mt-4">
+    <div class="card">
+        <div class="card-header bg-primary text-white">
+            <h2 class="mb-0">Profile</h2>
+        </div>
+        <div class="card-body">
+            <h3 class="card-title">@Model.Username</h3>
+            <p class="card-text"><strong>Email:</strong> @Model.Email</p>
+            <p class="card-text"><strong>Mobile Number:</strong> @Model.MobileNumber</p>
+            @if (Model.UserRole == "Educator")
+            {
+                <p class="card-text"><strong>Additional Educator Info:</strong> ...</p>
+            }
+            else if (Model.UserRole == "Student")
+            {
+                <p class="card-text"><strong>Additional Student Info:</strong> ...</p>
+            }
+            <a asp-action="EditProfile" class="btn btn-primary mt-3">Edit Profile</a>
+        </div>
+    </div>
+</div>
+
+
+
+

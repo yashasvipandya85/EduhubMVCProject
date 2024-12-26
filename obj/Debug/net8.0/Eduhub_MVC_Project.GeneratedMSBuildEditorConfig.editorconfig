@@ -1,0 +1,171 @@
+is_global = true
+build_property.TargetFramework = net8.0
+build_property.TargetFramework = net8.0
+build_property.TargetPlatformMinVersion = 
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = Eduhub_MVC_Project
+build_property.RootNamespace = Eduhub_MVC_Project
+build_property.ProjectDir = C:\Users\yashasvi.pandya\Documents\Projects\Eduhub_MVC_Project\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.RazorLangVersion = 8.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\yashasvi.pandya\Documents\Projects\Eduhub_MVC_Project
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/Users/yashasvi.pandya/Documents/Projects/Eduhub_MVC_Project/Views/Course/CoursesByUser.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ291cnNlXENvdXJzZXNCeVVzZXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/yashasvi.pandya/Documents/Projects/Eduhub_MVC_Project/Views/Course/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ291cnNlXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/yashasvi.pandya/Documents/Projects/Eduhub_MVC_Project/Views/Course/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ291cnNlXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/yashasvi.pandya/Documents/Projects/Eduhub_MVC_Project/Views/Course/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ291cnNlXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/yashasvi.pandya/Documents/Projects/Eduhub_MVC_Project/Views/Course/StudentIndex.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ291cnNlXFN0dWRlbnRJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/yashasvi.pandya/Documents/Projects/Eduhub_MVC_Project/Views/Enquiry/CourseEnquiries.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW5xdWlyeVxDb3Vyc2VFbnF1aXJpZXMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/yashasvi.pandya/Documents/Projects/Eduhub_MVC_Project/Views/Enquiry/CreateEnquiry.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW5xdWlyeVxDcmVhdGVFbnF1aXJ5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/yashasvi.pandya/Documents/Projects/Eduhub_MVC_Project/Views/Enquiry/MyEnquiries.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW5xdWlyeVxNeUVucXVpcmllcy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/yashasvi.pandya/Documents/Projects/Eduhub_MVC_Project/Views/Enquiry/RespondToEnquiry.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW5xdWlyeVxSZXNwb25kVG9FbnF1aXJ5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/yashasvi.pandya/Documents/Projects/Eduhub_MVC_Project/Views/Enquiry/SubmitEnquiry.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW5xdWlyeVxTdWJtaXRFbnF1aXJ5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/yashasvi.pandya/Documents/Projects/Eduhub_MVC_Project/Views/Enrollment/CourseEnrollments.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW5yb2xsbWVudFxDb3Vyc2VFbnJvbGxtZW50cy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/yashasvi.pandya/Documents/Projects/Eduhub_MVC_Project/Views/Enrollment/EducatorEnrollments.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW5yb2xsbWVudFxFZHVjYXRvckVucm9sbG1lbnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/yashasvi.pandya/Documents/Projects/Eduhub_MVC_Project/Views/Enrollment/Enrollments.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW5yb2xsbWVudFxFbnJvbGxtZW50cy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/yashasvi.pandya/Documents/Projects/Eduhub_MVC_Project/Views/Enrollment/MyCourses.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW5yb2xsbWVudFxNeUNvdXJzZXMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/yashasvi.pandya/Documents/Projects/Eduhub_MVC_Project/Views/Feedback/CourseFeedbacks.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmVlZGJhY2tcQ291cnNlRmVlZGJhY2tzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/yashasvi.pandya/Documents/Projects/Eduhub_MVC_Project/Views/Feedback/MyFeedbacks.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmVlZGJhY2tcTXlGZWVkYmFja3MuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/yashasvi.pandya/Documents/Projects/Eduhub_MVC_Project/Views/Feedback/SubmitFeedback.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmVlZGJhY2tcU3VibWl0RmVlZGJhY2suY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/yashasvi.pandya/Documents/Projects/Eduhub_MVC_Project/Views/Material/AddMaterial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWF0ZXJpYWxcQWRkTWF0ZXJpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/yashasvi.pandya/Documents/Projects/Eduhub_MVC_Project/Views/Material/CourseMaterials.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWF0ZXJpYWxcQ291cnNlTWF0ZXJpYWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/yashasvi.pandya/Documents/Projects/Eduhub_MVC_Project/Views/Material/EditMaterial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWF0ZXJpYWxcRWRpdE1hdGVyaWFsLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/yashasvi.pandya/Documents/Projects/Eduhub_MVC_Project/Views/Material/ViewMaterials.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWF0ZXJpYWxcVmlld01hdGVyaWFscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/yashasvi.pandya/Documents/Projects/Eduhub_MVC_Project/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/yashasvi.pandya/Documents/Projects/Eduhub_MVC_Project/Views/Shared/_EducatorLayout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9FZHVjYXRvckxheW91dC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/yashasvi.pandya/Documents/Projects/Eduhub_MVC_Project/Views/Shared/_StudentLayout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9TdHVkZW50TGF5b3V0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/yashasvi.pandya/Documents/Projects/Eduhub_MVC_Project/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/yashasvi.pandya/Documents/Projects/Eduhub_MVC_Project/Views/User/EditProfile.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxFZGl0UHJvZmlsZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/yashasvi.pandya/Documents/Projects/Eduhub_MVC_Project/Views/User/EducatorDashboard.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxFZHVjYXRvckRhc2hib2FyZC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/yashasvi.pandya/Documents/Projects/Eduhub_MVC_Project/Views/User/EducatorLogin.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxFZHVjYXRvckxvZ2luLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/yashasvi.pandya/Documents/Projects/Eduhub_MVC_Project/Views/User/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/yashasvi.pandya/Documents/Projects/Eduhub_MVC_Project/Views/User/Profile.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxQcm9maWxlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/yashasvi.pandya/Documents/Projects/Eduhub_MVC_Project/Views/User/Register.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxSZWdpc3Rlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/yashasvi.pandya/Documents/Projects/Eduhub_MVC_Project/Views/User/StudentDashboard.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxTdHVkZW50RGFzaGJvYXJkLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/yashasvi.pandya/Documents/Projects/Eduhub_MVC_Project/Views/User/StudentLogin.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxTdHVkZW50TG9naW4uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/yashasvi.pandya/Documents/Projects/Eduhub_MVC_Project/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/yashasvi.pandya/Documents/Projects/Eduhub_MVC_Project/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/yashasvi.pandya/Documents/Projects/Eduhub_MVC_Project/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-uqnysmd8xr

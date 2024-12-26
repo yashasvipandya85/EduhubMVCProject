@@ -1,0 +1,39 @@
+@model Eduhub_MVC_Project.Models.EnquiryViewModel
+
+@{
+    ViewData["Title"] = "Submit Enquiry";
+    Layout = "~/Views/Shared/_StudentLayout.cshtml"; 
+}
+
+<div class="container mt-4">
+    <h2 class="mb-4 text-center">Submit Enquiry</h2>
+
+    @*@if (TempData["SuccessMessage"] != null)
+    {
+        <div class="alert alert-success" role="alert">
+            @TempData["SuccessMessage"]
+        </div>
+    }
+    @if (TempData["ErrorMessage"] != null)
+    {
+        <div class="alert alert-danger" role="alert">
+            @TempData["ErrorMessage"]
+        </div>
+    }*@
+
+    <form asp-action="SubmitEnquiry" method="post">
+        <div class="form-group">
+            <label asp-for="Subject" class="control-label"></label>
+            <input asp-for="Subject" class="form-control" required />
+        </div>
+        <div class="form-group">
+            <label asp-for="Message" class="control-label"></label>
+            <textarea asp-for="Message" class="form-control" required></textarea>
+        </div>
+        <input asp-for="CourseId" type="hidden" value="@Model.CourseId" />
+        <input asp-for="UserId" type="hidden" value="@Model.UserId" />
+        <div>
+            <button type="submit" class="btn btn-primary">Submit Enquiry</button>
+        </div>
+    </form>
+</div>

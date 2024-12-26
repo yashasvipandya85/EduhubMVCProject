@@ -1,0 +1,36 @@
+@model IEnumerable<Eduhub_MVC_Project.Models.Feedback>
+
+@{
+    ViewData["Title"] = "Course Feedbacks";
+    Layout = "~/Views/Shared/_EducatorLayout.cshtml"; // Using educator layout
+}
+
+<div class="container mt-4">
+    <h2 class="mb-4 text-center">Course Feedbacks</h2>
+    @if (!Model.Any())
+    {
+        <p>No feedback has been submitted for this course yet.</p>
+    }
+    else
+    {
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>Student Username</th>
+                    <th>Feedback</th>
+                    <th>Date</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var feedback in Model)
+                {
+                    <tr>
+                        <td>@feedback.User.Username</td>
+                        <td>@feedback.StuFeedback</td>
+                        <td>@feedback.Date.ToString("yyyy-MM-dd")</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    }
+</div>

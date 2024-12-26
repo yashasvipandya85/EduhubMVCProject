@@ -1,0 +1,32 @@
+@model IEnumerable<Eduhub_MVC_Project.Models.Course>
+
+@{
+    ViewData["Title"] = "Courses";
+     Layout = "~/Views/Shared/_EducatorLayout.cshtml";
+}
+
+<div class="container mt-4">
+    <h2 class="mb-4 text-center">Available Courses</h2>
+    <div class="row">
+        @foreach (var course in Model)
+        {
+            <div class="col-md-4 mb-4">
+                <div class="card shadow-sm border-light rounded">
+                    <div class="card-body">
+                        <h5 class="card-title text-primary">@course.Title</h5>
+                        <p class="card-text text-muted">@course.Description</p>
+                        <div class="d-flex justify-content-between">
+                            <p class="card-text"><strong>Start:</strong> @course.CourseStartDate.ToString("yyyy-MM-dd")</p>
+                            <p class="card-text"><strong>End:</strong> @course.CourseEndDate.ToString("yyyy-MM-dd")</p>
+                        </div>
+                        <div class="d-flex justify-content-between">
+                            <p class="card-text"><strong>Category:</strong> <span class="badge bg-info text-dark">@course.Category</span></p>
+                            <p class="card-text"><strong>Level:</strong> <span class="badge bg-success">@course.Level</span></p>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+</div>

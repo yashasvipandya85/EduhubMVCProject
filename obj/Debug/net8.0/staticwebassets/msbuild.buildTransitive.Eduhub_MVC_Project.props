@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\buildMultiTargeting\Eduhub_MVC_Project.props" />
+</Project>

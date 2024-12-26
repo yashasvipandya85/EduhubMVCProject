@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\Eduhub_MVC_Project.props" />
+</Project>

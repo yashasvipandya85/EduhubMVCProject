@@ -1,0 +1,207 @@
+@*@model Eduhub_MVC_Project.Models.Course
+
+@{
+    ViewData["Title"] = "Edit";
+    Layout = null;
+}
+  <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="~/css/styles.css" asp-append-version="true" />
+<div class="container mt-5">
+    <div class="card">
+        <div class="card-header">
+            <h2>Edit Course</h2>
+        </div>
+        <div class="card-body">
+            <form asp-action="Edit">
+                <div asp-validation-summary="ModelOnly" class="text-danger mb-3"></div>
+                <div class="form-group mb-3">
+                    <label asp-for="CourseId" class="control-label"></label>
+                    <input asp-for="CourseId" class="form-control" />
+                    <span asp-validation-for="CourseId" class="text-danger"></span>
+                </div>
+                <div class="form-group mb-3">
+                    <label asp-for="Title" class="control-label"></label>
+                    <input asp-for="Title" class="form-control" />
+                    <span asp-validation-for="Title" class="text-danger"></span>
+                </div>
+                <div class="form-group mb-3">
+                    <label asp-for="Description" class="control-label"></label>
+                    <input asp-for="Description" class="form-control" />
+                    <span asp-validation-for="Description" class="text-danger"></span>
+                </div>
+                <div class="form-group mb-3">
+                    <label asp-for="CourseStartDate" class="control-label"></label>
+                    <input asp-for="CourseStartDate" class="form-control" />
+                    <span asp-validation-for="CourseStartDate" class="text-danger"></span>
+                </div>
+                <div class="form-group mb-3">
+                    <label asp-for="CourseEndDate" class="control-label"></label>
+                    <input asp-for="CourseEndDate" class="form-control" />
+                    <span asp-validation-for="CourseEndDate" class="text-danger"></span>
+                </div>
+                <div class="form-group mb-3">
+                    <label asp-for="UserId" class="control-label"></label>
+                    <input asp-for="UserId" class="form-control" />
+                    <span asp-validation-for="UserId" class="text-danger"></span>
+                </div>
+                <div class="form-group mb-3">
+                    <label asp-for="Category" class="control-label"></label>
+                    <input asp-for="Category" class="form-control" />
+                    <span asp-validation-for="Category" class="text-danger"></span>
+                </div>
+                <div class="form-group mb-3">
+                    <label asp-for="Level" class="control-label"></label>
+                    <input asp-for="Level" class="form-control" />
+                    <span asp-validation-for="Level" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <input type="submit" value="Save" class="btn btn-primary" />
+                </div>
+            </form>
+        </div>
+        <div class="card-footer text-muted">
+            <a asp-action="Index" class="btn btn-secondary">Back to List</a>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}*@
+@*@model Eduhub_MVC_Project.Models.Course
+
+@{
+    ViewData["Title"] = "Edit";
+    Layout = null;
+}
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" />
+<link rel="stylesheet" href="~/css/styles.css" asp-append-version="true" />
+
+<div class="container mt-5">
+    <div class="card">
+        <div class="card-header">
+            <h2>Edit Course</h2>
+        </div>
+        <div class="card-body">
+            <form asp-action="Edit" method="post">
+                <div asp-validation-summary="ModelOnly" class="text-danger mb-3"></div>
+                <input type="hidden" asp-for="CourseId" />
+                <div class="form-group mb-3">
+                    <label asp-for="Title" class="control-label"></label>
+                    <input asp-for="Title" class="form-control" />
+                    <span asp-validation-for="Title" class="text-danger"></span>
+                </div>
+                <div class="form-group mb-3">
+                    <label asp-for="Description" class="control-label"></label>
+                    <input asp-for="Description" class="form-control" />
+                    <span asp-validation-for="Description" class="text-danger"></span>
+                </div>
+                <div class="form-group mb-3">
+                    <label asp-for="CourseStartDate" class="control-label"></label>
+                    <input asp-for="CourseStartDate" class="form-control" />
+                    <span asp-validation-for="CourseStartDate" class="text-danger"></span>
+                </div>
+                <div class="form-group mb-3">
+                    <label asp-for="CourseEndDate" class="control-label"></label>
+                    <input asp-for="CourseEndDate" class="form-control" />
+                    <span asp-validation-for="CourseEndDate" class="text-danger"></span>
+                </div>
+                <div class="form-group mb-3">
+                    <label asp-for="UserId" class="control-label"></label>
+                    <input asp-for="UserId" class="form-control" />
+                    <span asp-validation-for="UserId" class="text-danger"></span>
+                </div>
+                <div class="form-group mb-3">
+                    <label asp-for="Category" class="control-label"></label>
+                    <input asp-for="Category" class="form-control" />
+                    <span asp-validation-for="Category" class="text-danger"></span>
+                </div>
+                <div class="form-group mb-3">
+                    <label asp-for="Level" class="control-label"></label>
+                    <input asp-for="Level" class="form-control" />
+                    <span asp-validation-for="Level" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <input type="submit" value="Save" class="btn btn-primary" />
+                </div>
+            </form>
+        </div>
+        <div class="card-footer text-muted">
+            <a asp-action="Index" class="btn btn-secondary">Back to List</a>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}*@
+@model Eduhub_MVC_Project.Models.Course
+
+@{
+    ViewData["Title"] = "Edit";
+    Layout = null;
+}
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" />
+<link rel="stylesheet" href="~/css/styles.css" asp-append-version="true" />
+
+<div class="container mt-5">
+    <div class="card">
+        <div class="card-header">
+            <h2>Edit Course</h2>
+        </div>
+        <div class="card-body">
+            <form asp-action="Edit" method="post">
+                <div asp-validation-summary="ModelOnly" class="text-danger mb-3"></div>
+                <input type="hidden" asp-for="CourseId" />
+                <input type="hidden" asp-for="UserId" />
+                <input type="hidden" asp-for="User" />
+                <input type="hidden" asp-for="Enrollments" />
+                <div class="form-group mb-3">
+                    <label asp-for="Title" class="control-label"></label>
+                    <input asp-for="Title" class="form-control" />
+                    <span asp-validation-for="Title" class="text-danger"></span>
+                </div>
+                <div class="form-group mb-3">
+                    <label asp-for="Description" class="control-label"></label>
+                    <input asp-for="Description" class="form-control" />
+                    <span asp-validation-for="Description" class="text-danger"></span>
+                </div>
+                <div class="form-group mb-3">
+                    <label asp-for="CourseStartDate" class="control-label"></label>
+                    <input asp-for="CourseStartDate" class="form-control" />
+                    <span asp-validation-for="CourseStartDate" class="text-danger"></span>
+                </div>
+                <div class="form-group mb-3">
+                    <label asp-for="CourseEndDate" class="control-label"></label>
+                    <input asp-for="CourseEndDate" class="form-control" />
+                    <span asp-validation-for="CourseEndDate" class="text-danger"></span>
+                </div>
+                <div class="form-group mb-3">
+                    <label asp-for="Category" class="control-label"></label>
+                    <input asp-for="Category" class="form-control" />
+                    <span asp-validation-for="Category" class="text-danger"></span>
+                </div>
+                <div class="form-group mb-3">
+                    <label asp-for="Level" class="control-label"></label>
+                    <input asp-for="Level" class="form-control" />
+                    <span asp-validation-for="Level" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <input type="submit" value="Save" class="btn btn-primary" />
+                </div>
+            </form>
+        </div>
+        <div class="card-footer text-muted">
+            <a asp-action="Index" class="btn btn-secondary">Back to List</a>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

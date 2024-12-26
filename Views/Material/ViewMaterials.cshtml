@@ -1,0 +1,42 @@
+@model IEnumerable<Eduhub_MVC_Project.Models.Material>
+
+@{
+    ViewData["Title"] = "Course Materials";
+    Layout = "~/Views/Shared/_StudentLayout.cshtml"; // Using student layout
+}
+
+<div class="container mt-4">
+    <h2 class="mb-4 text-center">Course Materials</h2>
+    @if (!Model.Any())
+    {
+        <p>No materials have been uploaded for this course yet.</p>
+    }
+    else
+    {
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>Title</th>
+                    <th>Description</th>
+                    <th>Upload Date</th>
+                    <th>Content Type</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var material in Model)
+                {
+                    <tr>
+                        <td>@material.Title</td>
+                        <td>@material.Description</td>
+                        <td>@material.UploadDate.ToString("yyyy-MM-dd")</td>
+                        <td>@material.ContentType</td>
+                        <td>
+                            <a href="@material.URL" class="btn btn-primary" target="_blank">View</a>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    }
+</div>
